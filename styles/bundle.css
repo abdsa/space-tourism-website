@@ -469,22 +469,15 @@ video {
 .static {
   position: static;
 }
-.grid {
-  display: grid;
-}
-.grid-cols-\[30\%\2c 70\%\] {
-  grid-template-columns: 30% 70%;
-}
 
 
 body, html {
   font-family: "Bellefair", serif;
 }
 
-body {
 
-}
 
 .home-background-img{
-  background: url("/background-home-desktop.jpg");
+  background: url("/background-home-desktop.jpg") no-repeat right;
+  background-size: auto 100%;
 }

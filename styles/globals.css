@@ -7,10 +7,9 @@ body, html {
   font-family: "Bellefair", serif;
 }
 
-body {
 
-}
 
 .home-background-img{
-  background: url("/background-home-desktop.jpg");
+  background: url("/background-home-desktop.jpg") no-repeat right;
+  background-size: auto 100%;
 }
