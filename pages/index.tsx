@@ -5,17 +5,21 @@ import Header from "../components/header";
 import data from "../data.json";
 import types from "../data";
 
+export const config = {
+  amp: true,
+};
 
 const Home: NextPage = () => {
   return (
     <>
-      <nav>
-        <Header></Header>
-      </nav>
-      <main className="home-background-img">fsdfasfsdf
-      </main>
+      <div className="grid grid-cols-[30%,70%]">
+        <nav>
+          <Header></Header>
+        </nav>
+        <main className="home-background-img"></main>
 
-      <footer></footer>
+        <footer></footer>
+      </div>
     </>
   );
 };

@@ -469,6 +469,12 @@ video {
 .static {
   position: static;
 }
+.grid {
+  display: grid;
+}
+.grid-cols-\[30\%\2c 70\%\] {
+  grid-template-columns: 30% 70%;
+}
 
 
 body, html {
@@ -480,5 +486,5 @@ body {
 }
 
 .home-background-img{
-  background: url("/public/assets/home/background-home-desktop.jpg");
+  background: url("/background-home-desktop.jpg");
 }
