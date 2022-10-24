@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <>
       <Header></Header>
 
-      <main className="grid grid-flow-col grid-cols-1 grid-rows-2 desktop:grid-cols-2 desktop:grid-rows-1">
+      <main className="grid grid-flow-col grid-cols-1 grid-rows-2 desktop:grid-cols-2 desktop:grid-rows-1 pb-2">
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             </div>
           </h1>
 
-          <p className="text-[0.938rem] max-w-[444px] text-center font-barlow desktop:text-bodyText font-light text-secondary desktop:text-start">
+          <p className="text-[0.938rem] px-2 max-w-[444px] text-center font-barlow desktop:text-bodyText font-light text-secondary desktop:text-start">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
