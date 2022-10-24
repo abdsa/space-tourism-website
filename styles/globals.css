@@ -3,13 +3,51 @@
 @tailwind utilities;
 
 
-body, html {
-  font-family: "Bellefair", serif;
+.home-background-img {
+  background: url("/background-home-desktop.jpg") no-repeat right;
+  background-size: auto 100%;
+}
+
+.nav-links-bg {
+  @apply bg-[rgb(255,255,255,0.1)] backdrop-blur-[40px];
+}
+@layer components {
+  .hr-style:after {
+    content: "";
+    width: 100%;
+    opacity: 0.25;
+    background-color: white;
+    height: 1px;
+    position: relative;
+    z-index: 10;
+    order: 1;
+    margin-right: -2.5rem;
+  }
+
+  .explore-button {
+    @apply flex h-[274px] w-[274px] rounded-full bg-white p-12 justify-center items-center text-mdHeading;
+  }
+.ripple{
+  position: relative;
+  opacity: 1;
 }
 
 
+  .ripple:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    transform: scale(0);
+    z-index: -1;
+    background-color: white;
+    opacity: 0.1;
+    transition: transform linear 0.3s;
+  }
 
-.home-background-img{
-  background: url("/background-home-desktop.jpg") no-repeat right;
-  background-size: auto 100%;
+  .ripple:hover:after {
+    transform: scale(1.6);
+
+  }
 }
