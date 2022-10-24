@@ -16,7 +16,7 @@ function NavItems() {
 
   return (
     <>
-      <ul className="hidden nav-links-bg desktop:flex gap-16 place-self-end px-[6rem] pt-[3rem] font-barlowC">
+      <ul className="nav-links-bg hidden gap-16 place-self-end px-[6rem] pt-[3rem] font-barlowC tablet:flex">
         {navItemsData.map((item) => {
           return (
             <Link href={item[2]} key={item[0]}>
@@ -28,10 +28,10 @@ function NavItems() {
                       : "border-[rgb(255,255,255,0.5)] hover:border-b-[3px]"
                   } grid cursor-pointer select-none grid-flow-col gap-6 pb-[3rem] text-navText font-light uppercase text-white transition-[border-width] duration-75`}
                 >
-                  <span className="navLinkNumber font-bold tracking-navText">
+                  <span className="navLinkNumber hidden font-bold tracking-navText desktop:block">
                     {item[0]}
                   </span>
-                  <span className="tracking-navText">{item[1]}</span>
+                  <span className=" tracking-navText">{item[1]}</span>
                 </li>
               </a>
             </Link>

@@ -507,6 +507,9 @@ video {
 .order-2 {
   order: 2;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -655,11 +658,27 @@ video {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
-
 .hover\:border-b-\[3px\]:hover {
   border-bottom-width: 3px;
 }
+@media (min-width: 768px) {
 
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:flex {
+    display: flex;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:tracking-navText {
+    letter-spacing: 0.169rem;
+  }
+}
 @media (min-width: 1440px) {
   .desktop\:hr-style:after {
     content: "";
@@ -671,6 +690,9 @@ video {
     z-index: 10;
     order: 1;
     margin-right: -2.5rem;
+  }
+  .desktop\:block {
+    display: block;
   }
   .desktop\:flex {
     display: flex;
