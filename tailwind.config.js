@@ -21,7 +21,7 @@ module.exports = {
       fontFamily: {
         "barlowC": "'Barlow Condensed', sans-serif;",
         "barlow": "'Barlow', sans-serif;",
-         "bellefair": "'Bellefair', sans-serif;"
+        "bellefair": "'Bellefair', sans-serif;"
       },
       fontSize: {
         "2xlHeading": "9.375rem",
