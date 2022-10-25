@@ -39,8 +39,9 @@ const Home: NextPage = () => {
           body {
             background: url("/background-home-mobile.jpg") no-repeat;
             background-size: cover;
+            min-height: 100vh;
             display: grid;
-            grid-template-rows: min-content 1fr
+            grid-template-rows: min-content 1fr;
           }
 
           @media (min-width: 768px) {
@@ -52,6 +53,7 @@ const Home: NextPage = () => {
           @media (min-width: 1440px) {
             body {
               background-image: url(/background-home-desktop.jpg);
+              padding: 0;
             }
           }
         `}
