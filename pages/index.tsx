@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <>
       <Header></Header>
 
-      <main className="grid grid-flow-col grid-cols-1 grid-rows-2 desktop:grid-cols-2 desktop:grid-rows-1 pb-16">
+      <main className="grid grid-flow-col grid-cols-1 grid-rows-[50vh_30vh] desktop:grid-cols-2 desktop:grid-rows-1">
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO
@@ -34,9 +34,6 @@ const Home: NextPage = () => {
           <Explore></Explore>
         </div>
       </main>
-
-      <footer></footer>
-
       <style jsx global>
         {`
           body {
@@ -44,7 +41,7 @@ const Home: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: min-content 1fr;
+            grid-template-rows: min-content 1fr
           }
 
           @media (min-width: 768px) {
