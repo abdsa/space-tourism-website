@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <>
       <Header></Header>
 
-      <main className="grid grid-flow-col grid-cols-1 grid-rows-[50vh_30vh] desktop:grid-cols-2 desktop:grid-rows-1">
+      <main className="grid grid-cols-1 desktop:grid-cols-2 desktop:grid-rows-1">
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO
