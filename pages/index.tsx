@@ -39,7 +39,6 @@ const Home: NextPage = () => {
           body {
             background: url("/background-home-mobile.jpg") no-repeat;
             background-size: cover;
-            min-height: 100vh;
             display: grid;
             grid-template-rows: min-content 1fr
           }

@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html style={{height: "100vh"}}>
+      <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
