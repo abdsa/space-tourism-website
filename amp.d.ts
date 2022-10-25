@@ -586,6 +586,7 @@ declare global {
       "amp-story": any;
       "amp-story-grid-layer": any;
       "amp-story-page": any;
+      "amp-selector": any;
     }
   }
 }
