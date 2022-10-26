@@ -102,6 +102,11 @@ const Destination: NextPage = () => {
               background-image: url(/background-destination-desktop.jpg);
               padding: 0;
             }
+
+            amp-selector [option][selected]:focus {
+              cursor: pointer;
+              outline: 4px solid rgba(117, 170, 255, 0.5);
+            }
           }
 
           :root {
@@ -156,10 +161,7 @@ const Destination: NextPage = () => {
             display: grid;
           }
 
-          amp-selector [option][selected]:focus {
-            cursor: pointer;
-            outline: 4px solid rgba(117, 170, 255, 0.5);
-          }
+          
           amp-selector [option][selected] {
             outline: none;
           }
