@@ -20,6 +20,7 @@ const DestinationTabs: React.FunctionComponent<IDestinationTabsProps> = (
               id={`${item.name} tab`}
               role="tab"
               aria-controls={`${item.name} description`}
+              //@ts-ignore
               option={`${index}`}
               selected={index === 0 ? "true" : ""}
               key={`${index}`}
