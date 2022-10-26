@@ -13,7 +13,7 @@ const Destination: NextPage = () => {
     <>
       <Header></Header>
       <main className="main-grid pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
-        <h1 className="ml-[5vw] justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
+        <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01
           </span>
