@@ -12,11 +12,16 @@ const Destination: NextPage = () => {
   return (
     <>
       <Header></Header>
-      <main className="grid grid-flow-col grid-rows-[repeat(3,min-content)] main-grid gap-10 text-white place-content-center">
-      <h1 className="uppercase ml-[5vw] font-barlowC font-bold text-smHeading tracking-smHeading"><span className="mr-5 text-[rgb(255,255,255,0.25)]">01</span>Pick your destination</h1>
+      <main className="main-grid grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+        <h1 className="ml-[5vw] justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
+          <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
+            01
+          </span>
+          Pick your destination
+        </h1>
         <DestinationTabs></DestinationTabs>
         <amp-selector
-          className="tabpanels article-section grid grid-flow-col gap-5 font-barlowC text-bodyText tracking-navText text-secondary"
+          className="tabpanels article-section grid grid-flow-col gap-5 font-barlowC text-navText tracking-navText text-white desktop:text-bodyText"
           role="tablist"
           keyboard-select-mode="focus"
           id="myTabPanels"
@@ -27,21 +32,48 @@ const Destination: NextPage = () => {
                 id={`${item.name} description`}
                 role="tabpanel"
                 aria-labelledby={`${item.name} tab`}
-                className="grid grid-flow-col grid-cols-[min-content_auto] gap-10 place-content-center"
+                className="gap-10 desktop:grid-flow-col desktop:grid-cols-[30vw_minmax(0,40rem)] desktop:gap-10"
                 key={`${index}`}
                 option="true"
                 selected={index === 0 ? "true" : ""}
               >
-                <div className="justify-self-center -mt-20">
-                <amp-img
-                  layout="fixed"
-                  width="500"
-                  height="500"
-                  src={`${item.images.webp}`}
-                  className=""
-                />
+                <div className="relative grid justify-items-center">
+                  <amp-img
+                    className="height-[300px] max-h-[300px] w-[300px] max-w-[300px] tablet:h-full tablet:max-h-[400px] tablet:w-full tablet:max-w-[400px] desktop:h-full desktop:max-h-[500px] desktop:w-full desktop:max-w-[500px]"
+                    src={`${item.images.webp}`}
+                    layout="responsive"
+                    height="500"
+                    width="500"
+                  />
                 </div>
-                <p className="font-barlow text-white max-w-[444px]">{item.description}</p>
+                <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
+                  <p className="text-center tablet:mb-20 desktop:mb-0 font-bellefair text-[5rem] uppercase desktop:text-start desktop:text-2xlHeading">
+                    {item.name}
+                  </p>
+                  <p className="max-w-[75ch] justify-self-center text-center font-barlow text-secondary desktop:max-w-full desktop:justify-self-start desktop:text-start">
+                    {item.description}
+                  </p>
+                  <hr className="border my-10 tablet:my-12 desktop:my-10 border-[#383B4B]" />
+                  <div className="gap-10 flex flex-col tablet:flex-row tablet:justify-center tablet:gap-20 desktop:flex-row desktop:justify-start desktop:gap-20">
+                    <div className="flex flex-col font-barlowC tablet:gap-1 desktop:gap-1">
+                      <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary  tablet:text-start desktop:text-start">
+                        AVG. DISTANCE
+                      </span>
+                      <span className="text-center font-bellefair text-smHeading uppercase tablet:text-start desktop:text-start">
+                        {item.distance}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-col gap-2 font-barlowC tablet:gap-1 desktop:gap-1">
+                      <span className="text-center text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-start desktop:text-start">
+                        Est. travel time
+                      </span>
+                      <span className="text-center font-bellefair text-smHeading uppercase tablet:text-start desktop:text-start">
+                        {item.travel}
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </article>
             );
           })}
@@ -135,19 +167,16 @@ const Destination: NextPage = () => {
             cursor: pointer;
             outline: none;
             border-bottom: 3px solid rgb(255, 255, 255);
-            color: hsl(231, 77%, 90%)
+            color: hsl(231, 77%, 90%);
           }
 
           .destination-tabs [option][aria-selected="false"]:hover {
             border-bottom: 3px solid rgb(255, 255, 255, 0.5);
           }
 
-          .griddy{
-            grid-template-areas: ". dt"
+          .griddy {
+            grid-template-areas: ". dt";
           }
-          
-          
-        
         `}
       </style>
     </>
