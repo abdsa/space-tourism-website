@@ -27,6 +27,7 @@ const Destination: NextPage = () => {
           id="myTabPanels"
         >
           {jsonData.destinations.map((item, index) => {
+            
             return (
               <article
                 id={`${item.name} description`}
@@ -34,6 +35,7 @@ const Destination: NextPage = () => {
                 aria-labelledby={`${item.name} tab`}
                 className="gap-10 desktop:grid-flow-col desktop:grid-cols-[30vw_minmax(0,40rem)] desktop:gap-10"
                 key={`${index}`}
+                // @ts-ignore
                 option="true"
                 selected={index === 0 ? "true" : ""}
               >
