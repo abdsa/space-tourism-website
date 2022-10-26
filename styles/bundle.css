@@ -642,6 +642,12 @@ video {
 .grid-rows-\[30\%_min-content_min-content_min-content\] {
   grid-template-rows: 30% min-content min-content min-content;
 }
+.grid-rows-\[20\%_min-content_min-content_min-content\] {
+  grid-template-rows: 20% min-content min-content min-content;
+}
+.grid-rows-\[10\%_min-content_min-content_min-content\] {
+  grid-template-rows: 10% min-content min-content min-content;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -743,6 +749,12 @@ video {
 }
 .pb-\[2rem\] {
   padding-bottom: 2rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
 }
 .text-center {
   text-align: center;

@@ -12,7 +12,7 @@ const Destination: NextPage = () => {
   return (
     <>
       <Header></Header>
-      <main className="main-grid grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+      <main className="main-grid pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
         <h1 className="ml-[5vw] justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01
@@ -27,7 +27,6 @@ const Destination: NextPage = () => {
           id="myTabPanels"
         >
           {jsonData.destinations.map((item, index) => {
-            
             return (
               <article
                 id={`${item.name} description`}
@@ -48,14 +47,14 @@ const Destination: NextPage = () => {
                     width="500"
                   />
                 </div>
-                <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
-                  <p className="text-center tablet:mb-20 desktop:mb-0 font-bellefair text-[5rem] uppercase desktop:text-start desktop:text-2xlHeading">
+                <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
+                  <p className="text-center font-bellefair text-[5rem] uppercase tablet:mb-20 desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
                     {item.name}
                   </p>
                   <p className="max-w-[75ch] justify-self-center text-center font-barlow text-secondary desktop:max-w-full desktop:justify-self-start desktop:text-start">
                     {item.description}
                   </p>
-                  <hr className="border my-10 tablet:my-12 desktop:my-10 border-[#383B4B]" />
+                  <hr className="my-10 border border-[#383B4B] tablet:my-12 desktop:my-10" />
                   <div className="gap-10 flex flex-col tablet:flex-row tablet:justify-center tablet:gap-20 desktop:flex-row desktop:justify-start desktop:gap-20">
                     <div className="flex flex-col font-barlowC tablet:gap-1 desktop:gap-1">
                       <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary  tablet:text-start desktop:text-start">
