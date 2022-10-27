@@ -11,7 +11,7 @@ const DestinationTabs: React.FunctionComponent<IDestinationTabsProps> = (
         className="tabs-with-selector destination-tabs grid grid-flow-col place-content-center gap-10 justify-self-start pt-6 font-barlowC text-bodyText tracking-navText text-white"
         role="tablist"
         keyboard-select-mode="focus"
-        on="select:myTabPanels.toggle(index=event.targetOption, value=true)"
+        on="select:destination-tab-panels.toggle(index=event.targetOption, value=true)"
         style={{ gridArea: "dt" }}
       >
         {jsonData.destinations.map((item, index) => {
@@ -24,7 +24,7 @@ const DestinationTabs: React.FunctionComponent<IDestinationTabsProps> = (
               option={`${index}`}
               selected={index === 0 ? "true" : ""}
               key={`${index}`}
-              className="destination-tab pb-6 uppercase transition-[border-width]"
+              className="pb-6 uppercase transition-[border-bottom] duration-150"
               tabIndex={0}
             >
               {item.name}

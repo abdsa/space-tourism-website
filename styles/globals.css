@@ -51,3 +51,62 @@
 
   }
 }
+
+
+amp-selector[on^="select"] [option][selected]:focus {
+  cursor: pointer;
+  outline: 4px solid rgba(117, 170, 255, 0.5);
+}
+
+
+:root {
+--color-primary: #005af0;
+--space-1: 0.5rem; /* 8px */
+--space-4: 2rem; /* 32px */
+}
+
+/* Styles for the flex layout based tabs */
+
+/* Styles for the selector based tabs */
+
+.tabs-with-selector {
+display: flex;
+}
+
+.tabpanels [role="tabpanel"] {
+display: none;
+}
+.tabpanels [role="tabpanel"][selected] {
+display: grid;
+}
+
+[option] {
+cursor: pointer;
+}
+
+[option][selected] {
+cursor: auto;
+}
+
+[multiple] [option][selected] {
+cursor: pointer;
+}
+
+amp-selector[role="tablist"].tabs-with-selector {
+display: flex;
+}
+
+
+
+amp-selector.tabpanels [role="tabpanel"][aria-selected="false"] {
+display: none;
+/* custom styling, feel free to change */
+}
+amp-selector.tabpanels [role="tabpanel"][selected] {
+display: grid;
+}
+
+
+amp-selector [option][selected] {
+outline: none;
+}

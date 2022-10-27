@@ -11,8 +11,11 @@ export const config = {
 const Destination: NextPage = () => {
   return (
     <>
+    <Head>
+      <title>Destination</title>
+    </Head>
       <Header></Header>
-      <main className="main-grid pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+      <main className="pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
         <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01
@@ -21,11 +24,11 @@ const Destination: NextPage = () => {
         </h1>
         <DestinationTabs></DestinationTabs>
         <amp-selector
-          className="tabpanels article-section grid grid-flow-col gap-5 font-barlowC text-navText tracking-navText text-white desktop:text-bodyText"
+          className="tabpanels grid grid-flow-col gap-5 font-barlowC text-navText tracking-navText text-white desktop:text-bodyText"
           role="tablist"
           keyboard-select-mode="focus"
-          id="myTabPanels"
-        >
+          id="destination-tab-panels"
+          >
           {jsonData.destinations.map((item, index) => {
             return (
               <article
@@ -103,74 +106,16 @@ const Destination: NextPage = () => {
               padding: 0;
             }
 
-            amp-selector [option][selected]:focus {
-              cursor: pointer;
-              outline: 4px solid rgba(117, 170, 255, 0.5);
-            }
-          }
-
-          :root {
-            --color-primary: #005af0;
-            --space-1: 0.5rem; /* 8px */
-            --space-4: 2rem; /* 32px */
-          }
-
-          /* Styles for the flex layout based tabs */
-
-          /* Styles for the selector based tabs */
-          .tabs-with-selector {
-            display: flex;
-          }
-
-          .tabs-with-selector {
-            display: flex;
-          }
-
-          .tabpanels [role="tabpanel"] {
-            display: none;
-          }
-          .tabpanels [role="tabpanel"][selected] {
-            display: grid;
-          }
-
-          [option] {
-            cursor: pointer;
-          }
-
-          [option][selected] {
-            cursor: auto;
-          }
-
-          [multiple] [option][selected] {
-            cursor: pointer;
-          }
-
-          amp-selector[role="tablist"].tabs-with-selector {
-            display: flex;
-          }
-
-          amp-selector[role="tablist"].tabs-with-selector {
-            display: flex;
-          }
-
-          amp-selector.tabpanels [role="tabpanel"] {
-            display: none;
-            /* custom styling, feel free to change */
-          }
-          amp-selector.tabpanels [role="tabpanel"][selected] {
-            display: grid;
-          }
-
-          
-          amp-selector [option][selected] {
-            outline: none;
-          }
 
           .destination-tabs [option][selected] {
             cursor: pointer;
             outline: none;
             border-bottom: 3px solid rgb(255, 255, 255);
             color: hsl(231, 77%, 90%);
+          }
+
+          .destination-tabs [option] {
+            border-bottom: 3px solid transparent
           }
 
           .destination-tabs [option][aria-selected="false"]:hover {
