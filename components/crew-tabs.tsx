@@ -6,7 +6,7 @@ const CrewTabs: React.FunctionComponent<ICrewTabsProps> = (props) => {
   return (
     <>
       <amp-selector
-        className="tabs-with-selector justify-self-center crew-tabs grid grid-flow-col place-content-center gap-10 desktop:justify-self-start font-barlowC text-bodyText tracking-navText text-white "
+        className="tabs-with-selector desktop:-mt-[5vh] justify-self-center crew-tabs grid grid-flow-col place-content-center gap-10 desktop:justify-self-start font-barlowC text-bodyText tracking-navText text-white "
         role="tablist"
         keyboard-select-mode="focus"
         on="select:crew-tab-panels.toggle(index=event.targetOption, value=true)"

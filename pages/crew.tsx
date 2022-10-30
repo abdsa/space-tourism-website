@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <title>Crew</title>
       </Head>
       <Header></Header>
-      <main className="relative pb-12 tablet:pb-0 desktop:pb-0 grid grid-rows-[repeat(3,min-content)] gap-10 px-5 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+      <main className="relative pb-12 grid grid-rows-[repeat(3,min-content)] gap-10 px-5 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
         <>
           <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
             <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">

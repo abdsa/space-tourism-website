@@ -93,7 +93,7 @@ cursor: pointer;
 }
 
 amp-selector[role="tablist"].tabs-with-selector {
-display: flex;
+display: grid;
 }
 
 
