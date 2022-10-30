@@ -5,7 +5,7 @@ interface ILogoProps {}
 const Logo: React.FunctionComponent<ILogoProps> = (props) => {
   return (
     <>
-      <div className="self-center relative flex items-center">
+      <div>
         <svg
           width="48"
           height="48"

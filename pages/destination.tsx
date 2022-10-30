@@ -15,7 +15,7 @@ const Destination: NextPage = () => {
       <title>Destination</title>
     </Head>
       <Header></Header>
-      <main className="pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-10 px-5 text-white tablet:gap-5 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+      <main className="pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-5 px-5 text-white tablet:pb-0 tablet:gap-5 desktop:place-content-center desktop:gap-0">
         <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01
@@ -51,7 +51,7 @@ const Destination: NextPage = () => {
                   />
                 </div>
                 <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
-                  <p className="text-center font-bellefair text-[5rem] uppercase tablet:mb-20 desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
+                  <p className="text-center font-bellefair text-lgHeading tablet:text-[5rem] uppercase tablet:mb-20 desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
                     {item.name}
                   </p>
                   <p className="max-w-[75ch] justify-self-center text-center font-barlow text-secondary desktop:max-w-full desktop:justify-self-start desktop:text-start">
@@ -91,7 +91,8 @@ const Destination: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: min-content 1fr;
+            grid-template-rows: 15vh 85vh;
+
           }
 
           @media (min-width: 768px) {
@@ -104,8 +105,9 @@ const Destination: NextPage = () => {
             body {
               background-image: url(/background-destination-desktop.jpg);
               padding: 0;
+              gap: 0;
             }
-
+          }
 
           .destination-tabs [option][selected] {
             cursor: pointer;

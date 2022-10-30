@@ -84,6 +84,7 @@ const Home: NextPage = () => {
           @media (min-width: 768px) {
             body {
               background-image: url(/background-crew-tablet.jpg);
+
             }
           }
 
@@ -91,6 +92,7 @@ const Home: NextPage = () => {
             body {
               background-image: url(/background-crew-desktop.jpg);
               padding: 0;
+
             }
           }
         `}

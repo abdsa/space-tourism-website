@@ -20,7 +20,7 @@ const Technology: NextPage = () => {
         <title>Technology</title>
       </Head>
       <Header></Header>
-      <main className="grid grid-rows-[repeat(3,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 tablet:pb-0 desktop:justify-items-start desktop:gap-10 desktop:pb-0 desktop:my-auto">
+      <main className="grid grid-rows-[repeat(2,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 tablet:pb-0 desktop:justify-items-start desktop:gap-10 desktop:pb-0 desktop:my-auto">
         <>
           <h1 className="justify-self-center tablet:ml-20 font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
             <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
@@ -82,7 +82,7 @@ const Technology: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: min-content 1fr;
+            grid-template-rows: 15vh 85vh;
           }
 
           @media (min-width: 768px) {
