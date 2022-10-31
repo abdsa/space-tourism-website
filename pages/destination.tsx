@@ -5,6 +5,7 @@ import Header from "../components/header";
 import jsonData from "../data.json";
 import DestinationTabs from "../components/destination-tabs";
 import SkipToContent from "../components/skip-to-content";
+import MobileMenu from "../components/mobile-menu";
 export const config = {
   amp: true,
 };
@@ -12,13 +13,17 @@ export const config = {
 const Destination: NextPage = () => {
   return (
     <>
-    <Head>
-      <title>Destination</title>
-    </Head>
-    <SkipToContent></SkipToContent>
+      <MobileMenu></MobileMenu>
+      <Head>
+        <title>Destination</title>
+      </Head>
+      <SkipToContent></SkipToContent>
 
       <Header></Header>
-      <main id="main" className="pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-5 px-5 text-white tablet:pb-0 tablet:gap-5 desktop:place-content-center desktop:gap-0">
+      <main
+        id="main"
+        className="grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-5 px-5 pb-12 text-white tablet:gap-5 tablet:pb-0 desktop:place-content-center desktop:gap-0"
+      >
         <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01
@@ -31,7 +36,7 @@ const Destination: NextPage = () => {
           role="tablist"
           keyboard-select-mode="focus"
           id="destination-tab-panels"
-          >
+        >
           {jsonData.destinations.map((item, index) => {
             return (
               <article
@@ -54,14 +59,14 @@ const Destination: NextPage = () => {
                   />
                 </div>
                 <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
-                  <p className="text-center font-bellefair text-lgHeading tablet:text-[5rem] uppercase tablet:mb-20 desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
+                  <p className="text-center font-bellefair text-lgHeading uppercase tablet:mb-20 tablet:text-[5rem] desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
                     {item.name}
                   </p>
                   <p className="max-w-[75ch] justify-self-center text-center font-barlow text-secondary desktop:max-w-full desktop:justify-self-start desktop:text-start">
                     {item.description}
                   </p>
                   <hr className="my-10 border border-[#383B4B] tablet:my-12 desktop:my-10" />
-                  <div className="gap-10 flex flex-col tablet:flex-row tablet:justify-center tablet:gap-20 desktop:flex-row desktop:justify-start desktop:gap-20">
+                  <div className="flex flex-col gap-10 tablet:flex-row tablet:justify-center tablet:gap-20 desktop:flex-row desktop:justify-start desktop:gap-20">
                     <div className="flex flex-col font-barlowC tablet:gap-1 desktop:gap-1">
                       <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary  tablet:text-start desktop:text-start">
                         AVG. DISTANCE
@@ -94,8 +99,7 @@ const Destination: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: 15vh 85vh;
-
+            grid-template-rows: 10vh 90vh;
           }
 
           @media (min-width: 768px) {
@@ -120,7 +124,7 @@ const Destination: NextPage = () => {
           }
 
           .destination-tabs [option] {
-            border-bottom: 3px solid transparent
+            border-bottom: 3px solid transparent;
           }
 
           .destination-tabs [option][aria-selected="false"]:hover {

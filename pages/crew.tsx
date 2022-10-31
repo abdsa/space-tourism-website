@@ -4,6 +4,7 @@ import Image from "next/image";
 import CrewTabs from "../components/crew-tabs";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
+import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
 
@@ -16,13 +17,17 @@ const crew = jsonData.crew;
 const Home: NextPage = () => {
   return (
     <>
+      <MobileMenu></MobileMenu>
       <Head>
         <title>Crew</title>
       </Head>
       <SkipToContent></SkipToContent>
 
       <Header></Header>
-      <main id="main" className="relative pb-12 grid grid-rows-[repeat(3,min-content)] gap-10 px-5 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+      <main
+        id="main"
+        className="relative grid grid-rows-[repeat(3,min-content)] gap-10 px-5 pb-12 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0"
+      >
         <>
           <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
             <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
@@ -52,7 +57,7 @@ const Home: NextPage = () => {
                     <div className="uppercase opacity-50 tablet:text-[1.5rem] desktop:text-mdHeading">
                       {item.role}
                     </div>
-                    <div className="tablet:text-[2.5rem] text-[1.5rem] uppercase text-white desktop:text-lgHeading">
+                    <div className="text-[1.5rem] uppercase text-white tablet:text-[2.5rem] desktop:text-lgHeading">
                       {item.name}
                     </div>
                     <p className="max-w-[75ch] justify-self-center font-barlow font-thin leading-8 text-secondary tablet:text-navText desktop:text-bodyText">
@@ -64,9 +69,9 @@ const Home: NextPage = () => {
                     width="580"
                     height="712"
                     layout="responsive"
-                    className="justify-self-center w-[177px] height-[222px] tablet:w-[500px] tablet:height-[356px] desktop:w-[580px] desktop:height-[712px]"
+                    className="height-[222px] tablet:height-[356px] desktop:height-[712px] w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
                   />
-                  <hr className="mb-10 border border-[#383B4B] desktop:hidden"/>
+                  <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
                 </article>
               );
             })}
@@ -87,7 +92,6 @@ const Home: NextPage = () => {
           @media (min-width: 768px) {
             body {
               background-image: url(/background-crew-tablet.jpg);
-
             }
           }
 
@@ -95,7 +99,6 @@ const Home: NextPage = () => {
             body {
               background-image: url(/background-crew-desktop.jpg);
               padding: 0;
-
             }
           }
         `}

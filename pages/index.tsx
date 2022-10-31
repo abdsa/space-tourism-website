@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
+import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
 
@@ -13,13 +14,17 @@ export const config = {
 const Home: NextPage = () => {
   return (
     <>
-    <Head>
+      <MobileMenu></MobileMenu>
+      <Head>
         <title>Home</title>
       </Head>
       <SkipToContent></SkipToContent>
       <Header></Header>
-      
-      <main id="main" className="grid desktop:grid-cols-2 pb-[5vh] desktop:pb-0 text-white">
+
+      <main
+        id="main"
+        className="grid pb-[5vh] text-white desktop:grid-cols-[60%_40%] desktop:pb-0"
+      >
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO
@@ -28,14 +33,14 @@ const Home: NextPage = () => {
             </div>
           </h1>
 
-          <p className="px-2 max-w-[75ch] text-center font-barlow desktop:text-bodyText font-light text-secondary desktop:text-start">
+          <p className="max-w-[75ch] px-2 text-center font-barlow font-light text-secondary desktop:text-start desktop:text-bodyText">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
           </p>
         </div>
-          <Explore></Explore>
+        <Explore></Explore>
       </main>
       <style jsx global>
         {`
@@ -45,8 +50,7 @@ const Home: NextPage = () => {
             min-height: 100vh;
             display: grid;
             grid-template-rows: min-content 1fr;
-            grid-template-rows: 15vh 85vh;
-
+            grid-template-rows: 10vh 90vh;
           }
 
           @media (min-width: 768px) {

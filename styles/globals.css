@@ -57,7 +57,7 @@
 }
 
 
-amp-selector[on^="select"] [option][selected]:focus {
+amp-selector[on^="select"] [option]:focus {
   cursor: pointer;
   outline: 4px solid rgba(117, 170, 255, 0.5);
 }

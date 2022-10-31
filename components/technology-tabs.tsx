@@ -10,7 +10,7 @@ const TechnologyTabs: React.FunctionComponent<ITechnologyTabsProps> = (
   return (
     <>
       <amp-selector
-        className="tabs-with-selector technology-tabs grid grid-flow-col grid-cols-3 place-content-center gap-6 justify-self-center desktop:justify-self-end font-bellefair text-navText text-white tablet:text-[1.5rem] desktop:grid-flow-row desktop:grid-cols-1 desktop:text-mdHeading"
+        className="tabs-with-selector technology-tabs grid grid-flow-col grid-cols-3 place-content-center gap-6 justify-self-center font-bellefair text-navText text-white tablet:text-[1.5rem] desktop:grid-flow-row desktop:grid-cols-1 desktop:justify-self-end desktop:text-mdHeading"
         role="tablist"
         keyboard-select-mode="focus"
         on="select:technology-tab-panels.toggle(index=event.targetOption, value=true)"

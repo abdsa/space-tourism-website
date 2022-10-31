@@ -4,6 +4,7 @@ import Image from "next/image";
 import CrewTabs from "../components/crew-tabs";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
+import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import TechnologyTabs from "../components/technology-tabs";
 import jsonData from "../data.json";
@@ -17,11 +18,11 @@ const technology = jsonData.technology;
 const Technology: NextPage = () => {
   return (
     <>
+      <MobileMenu></MobileMenu>
       <Head>
         <title>Technology</title>
       </Head>
       <SkipToContent></SkipToContent>
-
       <Header></Header>
       <main
         id="main"
@@ -88,7 +89,7 @@ const Technology: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: 15vh 85vh;
+            grid-template-rows: 10vh 90vh;
           }
 
           @media (min-width: 768px) {
