@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 interface ILogoProps {}
@@ -5,7 +6,7 @@ interface ILogoProps {}
 const Logo: React.FunctionComponent<ILogoProps> = (props) => {
   return (
     <>
-      <div>
+      <Link href={"/"} className="rounded-full">
         <svg
           width="48"
           height="48"
@@ -21,7 +22,7 @@ const Logo: React.FunctionComponent<ILogoProps> = (props) => {
             fill="#0B0D17"
           />
         </svg>
-      </div>
+      </Link>
     </>
   );
 };
