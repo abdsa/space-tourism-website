@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                     height="712"
                     layout="responsive"
                     className="height-[222px] tablet:height-[356px] desktop:height-[712px] w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
-                    noloading/>
+                    noloading=""/>
                   <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
                 </article>
               );
