@@ -55,6 +55,11 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;800&display=swap"
             rel="stylesheet"
           />
+
+          <meta
+            name="google-site-verification"
+            content="KHyW2OAlQvDnCveNL1x2KvHDHdbvRo3tD00OqYN3i6w"
+          />
         </Head>
         <body>
           <Main />
