@@ -15,7 +15,12 @@ const Destination: NextPage = () => {
     <>
       <MobileMenu></MobileMenu>
       <Head>
-        <title>Destination</title>
+        <title>Space Tours - Select your destination</title>
+        <link
+          rel="canonical"
+          href="https://spacetourisms.vercel.app/destination"
+          key="canonical"
+        />
       </Head>
       <SkipToContent></SkipToContent>
 

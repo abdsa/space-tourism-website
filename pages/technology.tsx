@@ -20,7 +20,12 @@ const Technology: NextPage = () => {
     <>
       <MobileMenu></MobileMenu>
       <Head>
-        <title>Technology</title>
+        <title>Space Tours - The technologies</title>
+        <link
+          rel="canonical"
+          href="https://spacetourisms.vercel.app/technology"
+          key="canonical"
+        />
       </Head>
       <SkipToContent></SkipToContent>
       <Header></Header>

@@ -16,7 +16,16 @@ const Home: NextPage = () => {
     <>
       <MobileMenu></MobileMenu>
       <Head>
-        <title>Home</title>
+        <title>Space Tours - Explore</title>
+        <link
+          rel="canonical"
+          href="https://spacetourisms.vercel.app"
+          key="canonical"
+        />
+        <meta
+          name="description"
+          content=""
+        />
       </Head>
       <SkipToContent></SkipToContent>
       <Header></Header>
@@ -49,7 +58,6 @@ const Home: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: min-content 1fr;
             grid-template-rows: 10vh 90vh;
           }
 

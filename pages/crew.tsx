@@ -19,7 +19,12 @@ const Home: NextPage = () => {
     <>
       <MobileMenu></MobileMenu>
       <Head>
-        <title>Crew</title>
+        <title>Space Tours - Meet the crew</title>
+        <link
+          rel="canonical"
+          href="https://spacetourisms.vercel.app/crew"
+          key="canonical"
+        />
       </Head>
       <SkipToContent></SkipToContent>
 
