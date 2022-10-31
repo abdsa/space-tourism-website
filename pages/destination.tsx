@@ -21,6 +21,10 @@ const Destination: NextPage = () => {
           href="https://spacetourisms.vercel.app/destination"
           key="canonical"
         />
+        <meta
+          name="description"
+          content="Book a seat for a space trek to available planets."
+        />
       </Head>
       <SkipToContent></SkipToContent>
 
@@ -61,7 +65,8 @@ const Destination: NextPage = () => {
                     layout="responsive"
                     height="500"
                     width="500"
-                    noloading=""/>
+                    noloading=""
+                  />
                 </div>
                 <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
                   <p className="text-center font-bellefair text-lgHeading uppercase tablet:mb-20 tablet:text-[5rem] desktop:mb-0 desktop:text-start desktop:text-2xlHeading">

@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         />
         <meta
           name="description"
-          content=""
+          content="Explore our space trek service."
         />
       </Head>
       <SkipToContent></SkipToContent>

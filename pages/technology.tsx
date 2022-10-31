@@ -26,6 +26,7 @@ const Technology: NextPage = () => {
           href="https://spacetourisms.vercel.app/technology"
           key="canonical"
         />
+        <meta name="description" content="Our technologies are from one of the best companies." />
       </Head>
       <SkipToContent></SkipToContent>
       <Header></Header>
@@ -68,7 +69,8 @@ const Technology: NextPage = () => {
                       height="170"
                       src={item.images.landscape}
                       className="desktop:order-2 desktop:h-[500px] desktop:w-full"
-                      noloading=""></amp-img>
+                      noloading=""
+                    ></amp-img>
                     <div className="grid place-content-center gap-2 text-center desktop:order-1 desktop:place-content-start desktop:text-start">
                       <div className="font-barlowC text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-navText">
                         The terminology...

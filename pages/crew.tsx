@@ -27,7 +27,10 @@ const Home: NextPage = () => {
         />
       </Head>
       <SkipToContent></SkipToContent>
-
+      <meta
+          name="description"
+          content="Meet the crew that will trek with you."
+        />
       <Header></Header>
       <main
         id="main"
