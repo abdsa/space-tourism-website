@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "../components/header";
 import jsonData from "../data.json";
 import DestinationTabs from "../components/destination-tabs";
+import SkipToContent from "../components/skip-to-content";
 export const config = {
   amp: true,
 };
@@ -14,8 +15,10 @@ const Destination: NextPage = () => {
     <Head>
       <title>Destination</title>
     </Head>
+    <SkipToContent></SkipToContent>
+
       <Header></Header>
-      <main className="pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-5 px-5 text-white tablet:pb-0 tablet:gap-5 desktop:place-content-center desktop:gap-0">
+      <main id="main" className="pb-12 grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-5 px-5 text-white tablet:pb-0 tablet:gap-5 desktop:place-content-center desktop:gap-0">
         <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01

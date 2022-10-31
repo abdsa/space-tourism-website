@@ -4,6 +4,7 @@ import Image from "next/image";
 import CrewTabs from "../components/crew-tabs";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
+import SkipToContent from "../components/skip-to-content";
 import TechnologyTabs from "../components/technology-tabs";
 import jsonData from "../data.json";
 
@@ -19,17 +20,22 @@ const Technology: NextPage = () => {
       <Head>
         <title>Technology</title>
       </Head>
+      <SkipToContent></SkipToContent>
+
       <Header></Header>
-      <main className="grid grid-rows-[repeat(2,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 tablet:pb-0 desktop:justify-items-start desktop:gap-10 desktop:pb-0 desktop:my-auto">
+      <main
+        id="main"
+        className="grid grid-rows-[repeat(2,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 tablet:pb-0 desktop:my-auto desktop:justify-items-start desktop:gap-10 desktop:pb-0"
+      >
         <>
-          <h1 className="justify-self-center tablet:ml-20 font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
+          <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:ml-20 tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
             <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
               03
             </span>
             SPACE LAUNCH 101
           </h1>
 
-          <div className="w-full desktop:grid-flow-row desktop:grid-cols-[10%_90%] grid gap-10 desktop:gap-20">
+          <div className="grid w-full gap-10 desktop:grid-flow-row desktop:grid-cols-[10%_90%] desktop:gap-20">
             <TechnologyTabs></TechnologyTabs>
 
             <amp-selector
@@ -48,23 +54,23 @@ const Technology: NextPage = () => {
                     // @ts-ignore
                     option="true"
                     selected={index === 0 ? "true" : ""}
-                    className="grid gap-5 desktop:gap-0 desktop:grid-flow-col desktop:grid-cols-[60%_40%] desktop:items-center"
+                    className="grid gap-5 desktop:grid-flow-col desktop:grid-cols-[60%_40%] desktop:items-center desktop:gap-0"
                   >
                     <amp-img
                       layout="responsive"
                       width="375"
                       height="170"
                       src={item.images.landscape}
-                      className="desktop:w-full desktop:order-2 desktop:h-[500px]"
+                      className="desktop:order-2 desktop:h-[500px] desktop:w-full"
                     />
-                    <div className="grid place-content-center desktop:place-content-start gap-2 text-center desktop:text-start desktop:order-1">
+                    <div className="grid place-content-center gap-2 text-center desktop:order-1 desktop:place-content-start desktop:text-start">
                       <div className="font-barlowC text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-navText">
                         The terminology...
                       </div>
                       <div className="text-[1.5rem] uppercase tablet:text-[2.5rem] desktop:text-lgHeading">
                         {item.name}
                       </div>
-                      <p className="max-w-[75ch] px-5 desktop:p-0 font-barlow text-secondary desktop:text-bodyText">
+                      <p className="max-w-[75ch] px-5 font-barlow text-secondary desktop:p-0 desktop:text-bodyText">
                         {item.description}
                       </p>
                     </div>

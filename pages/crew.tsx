@@ -4,6 +4,7 @@ import Image from "next/image";
 import CrewTabs from "../components/crew-tabs";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
+import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
 
 export const config = {
@@ -18,8 +19,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Crew</title>
       </Head>
+      <SkipToContent></SkipToContent>
+
       <Header></Header>
-      <main className="relative pb-12 grid grid-rows-[repeat(3,min-content)] gap-10 px-5 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
+      <main id="main" className="relative pb-12 grid grid-rows-[repeat(3,min-content)] gap-10 px-5 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0">
         <>
           <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
             <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">

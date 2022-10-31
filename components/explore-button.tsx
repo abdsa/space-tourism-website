@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 interface IExploreProps {}
@@ -5,7 +6,9 @@ interface IExploreProps {}
 const Explore: React.FunctionComponent<IExploreProps> = (props) => {
   return (
     <>
-      <div className="explore-button ripple uppercase cursor-pointer select-none font-bellefair text-black">Explore</div>
+      <Link className="self-center justify-self-center explore-button ripple cursor-pointer select-none font-bellefair uppercase text-black outline-none" href={"/destination"}>
+          Explore
+      </Link>
     </>
   );
 };

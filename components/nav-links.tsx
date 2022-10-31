@@ -27,7 +27,7 @@ function NavItems() {
                     : "border-transparent border-b-[3px] hover:border-b-[3px] hover:border-[rgb(255,255,255,0.5)]"
                 } grid cursor-pointer select-none grid-flow-col gap-6 pb-[2rem] text-navText font-light uppercase text-white transition-[border-bottom] duration-150`}
               >
-                <span className="navLinkNumber hidden font-bold tracking-navText desktop:block">
+                <span aria-hidden="true" className="navLinkNumber hidden font-bold tracking-navText desktop:block">
                   {item[0]}
                 </span>
                 <span className=" tracking-navText">{item[1]}</span>

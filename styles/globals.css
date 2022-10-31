@@ -48,7 +48,11 @@
 
   .ripple:hover:after {
     transform: scale(1.6);
+  }
 
+  
+  .ripple:focus:after {
+    transform: scale(1.6);
   }
 }
 
@@ -109,4 +113,8 @@ display: grid;
 
 amp-selector [option][selected] {
 outline: none;
+}
+
+button:focus, a:focus {
+  outline: 4px solid rgba(117, 170, 255, 0.5);
 }

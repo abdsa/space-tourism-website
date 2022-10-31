@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
+import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
 
 export const config = {
@@ -15,8 +16,10 @@ const Home: NextPage = () => {
     <Head>
         <title>Home</title>
       </Head>
+      <SkipToContent></SkipToContent>
       <Header></Header>
-      <main className="grid desktop:grid-cols-2 pb-[5vh] desktop:pb-0 text-white">
+      
+      <main id="main" className="grid desktop:grid-cols-2 pb-[5vh] desktop:pb-0 text-white">
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO
@@ -32,9 +35,7 @@ const Home: NextPage = () => {
             world experience!
           </p>
         </div>
-        <div className="self-center justify-self-center">
           <Explore></Explore>
-        </div>
       </main>
       <style jsx global>
         {`
