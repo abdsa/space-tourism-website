@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                     height="712"
                     layout="responsive"
                     className="height-[222px] tablet:height-[356px] desktop:height-[712px] w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
-                  />
+                    noloading/>
                   <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
                 </article>
               );
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: min-content 1fr;
+            grid-template-rows: 10vh 1fr;
           }
 
           @media (min-width: 768px) {

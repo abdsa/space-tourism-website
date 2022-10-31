@@ -63,7 +63,7 @@ const Technology: NextPage = () => {
                       height="170"
                       src={item.images.landscape}
                       className="desktop:order-2 desktop:h-[500px] desktop:w-full"
-                    />
+                      noloading/>
                     <div className="grid place-content-center gap-2 text-center desktop:order-1 desktop:place-content-start desktop:text-start">
                       <div className="font-barlowC text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-navText">
                         The terminology...
