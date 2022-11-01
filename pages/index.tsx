@@ -6,21 +6,17 @@ import Header from "../components/header";
 import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
-import { GetStaticProps} from 'next'
+import { GetStaticProps } from "next";
 
-import {Barlow_Condensed} from "@next/font/google"
+import { Barlow_Condensed } from "@next/font/google";
 
-const barlowCondensed = Barlow_Condensed({weight: "100"})
-
-
+const barlowCondensed = Barlow_Condensed({ weight: "100" });
 
 export const getStaticProps: GetStaticProps = async (context) => {
-
-  
   return {
     props: {}, // will be passed to the page component as props
-  }
-}
+  };
+};
 export const config = {
   amp: true,
 };
@@ -36,17 +32,14 @@ const Home: NextPage = () => {
           href="https://spacetourisms.vercel.app"
           key="canonical"
         />
-        <meta
-          name="description"
-          content="Explore our space trek service."
-        />
+        <meta name="description" content="Explore our space trek service." />
       </Head>
       <SkipToContent></SkipToContent>
       <Header></Header>
 
       <main
         id="main"
-        className="grid pb-5 gap-6 tablet:gap-0 text-white desktop:grid-cols-[60%_40%] desktop:pb-0"
+        className="grid gap-6 pb-5 text-white tablet:gap-0 desktop:grid-cols-[60%_40%] desktop:pb-0"
       >
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
@@ -56,7 +49,7 @@ const Home: NextPage = () => {
             </div>
           </h1>
 
-          <p className="max-w-[75ch] px-2 text-center font-barlow font-light text-secondary desktop:text-start desktop:text-bodyText">
+          <p className="max-w-[50ch] px-2 text-center font-barlow font-light text-secondary desktop:text-start desktop:text-bodyText">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this

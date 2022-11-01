@@ -8,12 +8,31 @@ import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import TechnologyTabs from "../components/technology-tabs";
 import jsonData from "../data.json";
+import launchVehiclePortrait from "../public/image-launch-vehicle-portrait.jpg";
+import launchVehicleLandscape from "../public/image-launch-vehicle-landscape.jpg";
+import spaceportPortrait from "../public/image-spaceport-portrait.jpg";
+import spaceportLandscape from "../public/image-spaceport-landscape.jpg";
+import spaceCapsulePortrait from "../public/image-space-capsule-portrait.jpg";
+import spaceCapsuleLandscape from "../public/image-space-capsule-landscape.jpg";
+
+const portraitImages = [
+  launchVehiclePortrait,
+  spaceportPortrait,
+  spaceCapsulePortrait,
+];
+const landscapeImages = [
+  launchVehicleLandscape,
+  spaceportLandscape,
+  spaceCapsuleLandscape,
+];
 
 export const config = {
   amp: true,
 };
 
 const technology = jsonData.technology;
+
+const technologyImages = [];
 
 const Technology: NextPage = () => {
   return (
@@ -68,12 +87,17 @@ const Technology: NextPage = () => {
                   >
                     <Image
                       width="375"
-                      height="170"
-                      src={item.images.landscape}
-                      className="desktop:order-2 desktop:h-[500px] desktop:w-full"
+                      src={portraitImages[index]}
+                      className="hidden desktop:order-2 desktop:block desktop:h-[527px] desktop:w-[515px]"
                       alt={item.name}
                       quality="100"
-                      loading="eager"
+                      priority
+                    ></Image>
+                    <Image
+                      src={landscapeImages[index]}
+                      className="w-full desktop:order-2 desktop:hidden desktop:h-[500px] desktop:w-full"
+                      alt={item.name}
+                      quality="100"
                       priority
                     ></Image>
                     <div className="grid place-content-center gap-2 text-center desktop:order-1 desktop:place-content-start desktop:text-start">
@@ -83,7 +107,7 @@ const Technology: NextPage = () => {
                       <div className="text-[1.5rem] uppercase tablet:text-[2.5rem] desktop:text-lgHeading">
                         {item.name}
                       </div>
-                      <p className="max-w-[75ch] px-5 font-barlow text-secondary desktop:p-0 desktop:text-bodyText">
+                      <p className="max-w-[50ch] px-5 font-barlow text-secondary desktop:p-0 desktop:text-bodyText">
                         {item.description}
                       </p>
                     </div>

@@ -10,6 +10,13 @@ export const config = {
   amp: true,
 };
 
+import Moon from "../public/image-moon.webp";
+import Titan from "../public/image-titan.webp";
+import Europa from "../public/image-europa.webp";
+import Mars from "../public/image-mars.webp";
+
+const planetImgs = [Moon, Mars, Europa, Titan];
+
 const Destination: NextPage = () => {
   return (
     <>
@@ -60,23 +67,21 @@ const Destination: NextPage = () => {
               >
                 <div className="relative grid justify-items-center">
                   <Image
-                    className="height-[300px] max-h-[300px] w-[300px] max-w-[300px] tablet:h-full tablet:max-h-[400px] tablet:w-full tablet:max-w-[400px] desktop:h-full desktop:max-h-[500px] desktop:w-full desktop:max-w-[500px]"
-                    src={`${item.images.webp}`}
-                    height="500"
-                    width="500"
+                    className="max-h-[300px] max-w-[300px] tablet:max-h-[400px] tablet:max-w-[400px] desktop:max-h-[500px] desktop:max-w-[500px]"
+                    src={planetImgs[index]}
                     alt={item.name}
                     quality="100"
-                    loading="eager"
-                    priority/>
+                    priority={true}
+                  />
                 </div>
-                <div className="grid px-3 tablet:grid-rows-[30%_min-content_min-content_min-content] tablet:px-0 desktop:grid-rows-[40%_min-content_min-content_min-content]">
-                  <p className="text-center font-bellefair text-lgHeading uppercase tablet:mb-20 tablet:text-[5rem] desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
+                <div className="grid px-3 tablet:grid-rows-[min-content_minmax(0,150px)_min-content_min-content] tablet:px-0 desktop:grid-rows-[min-content_minmax(0,150px)_min-content_min-content]">
+                  <p className="text-center font-bellefair text-lgHeading uppercase tablet:text-[5rem] desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
                     {item.name}
                   </p>
-                  <p className="max-w-[75ch] justify-self-center text-center font-barlow text-secondary desktop:max-w-full desktop:justify-self-start desktop:text-start">
+                  <p className="max-w-[50ch] justify-self-center text-center font-barlow text-secondary desktop:justify-self-start desktop:text-start">
                     {item.description}
                   </p>
-                  <hr className="my-10 border border-[#383B4B] tablet:my-12 desktop:my-10" />
+                  <hr className="my-10 border border-[#383B4B] tablet:my-6 desktop:my-10" />
                   <div className="flex flex-col gap-10 tablet:flex-row tablet:justify-center tablet:gap-20 desktop:flex-row desktop:justify-start desktop:gap-20">
                     <div className="flex flex-col font-barlowC tablet:gap-1 desktop:gap-1">
                       <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary  tablet:text-start desktop:text-start">

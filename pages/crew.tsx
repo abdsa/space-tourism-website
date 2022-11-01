@@ -76,11 +76,11 @@ const Home: NextPage = () => {
                     src={item.images.webp}
                     width="580"
                     height="712"
-                    className="height-[222px] tablet:height-[356px] desktop:height-[712px] mt-2 w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
+                    className="mt-10 desktop:ml-20 justify-self-center desktop:mt-0"
                     alt={item.name}
                     quality="100"
-                    loading="eager"
-                    priority/>
+                    priority
+                  />
                   <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
                 </article>
               );
