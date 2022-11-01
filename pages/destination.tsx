@@ -65,7 +65,9 @@ const Destination: NextPage = () => {
                     height="500"
                     width="500"
                     alt={item.name}
-                  />
+                    quality="100"
+                    loading="eager"
+                    priority/>
                 </div>
                 <div className="grid px-3 tablet:grid-rows-[30%_min-content_min-content_min-content] tablet:px-0 desktop:grid-rows-[40%_min-content_min-content_min-content]">
                   <p className="text-center font-bellefair text-lgHeading uppercase tablet:mb-20 tablet:text-[5rem] desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
