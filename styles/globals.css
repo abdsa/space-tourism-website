@@ -25,7 +25,7 @@
   }
 
   .explore-button {
-    @apply flex h-[274px] w-[274px] rounded-full bg-white p-12 justify-center items-center text-mdHeading;
+    @apply flex h-[150px] w-[150px] tablet:w-[242px] tablet:h-[242px] desktop:h-[274px] desktop:w-[274px] rounded-full bg-white p-12 justify-center items-center text-[1.25rem] tablet:text-mdHeading;
   }
 .ripple{
   position: relative;
@@ -57,7 +57,7 @@
 }
 
 
-amp-selector[on^="select"] [option]:focus {
+amp-selector[on^="select"] [option]:focus-visible {
   cursor: pointer;
   outline: 4px solid rgba(117, 170, 255, 0.5);
 }
@@ -115,6 +115,6 @@ amp-selector [option][selected] {
 outline: none;
 }
 
-button:focus, a:focus {
+button:focus-visible, a:focus-visible {
   outline: 4px solid rgba(117, 170, 255, 0.5);
 }

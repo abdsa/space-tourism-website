@@ -95,7 +95,7 @@ const Technology: NextPage = () => {
                     ></Image>
                     <Image
                       src={landscapeImages[index]}
-                      className="w-full desktop:order-2 desktop:hidden desktop:h-[500px] desktop:w-full"
+                      className="w-full tablet:min-h-[170px] tablet:max-w-[50%] tablet:justify-self-center desktop:order-2 desktop:hidden desktop:h-[500px] desktop:w-full"
                       alt={item.name}
                       quality="100"
                       priority

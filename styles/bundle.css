@@ -468,15 +468,30 @@ video {
 }
 .explore-button {
   display: flex;
-  height: 274px;
-  width: 274px;
+  height: 150px;
+  width: 150px;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 3rem;
-  font-size: 2rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+
+  .explore-button {
+    height: 242px;
+    width: 242px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+
+  .explore-button {
+    height: 274px;
+    width: 274px;
+  }
 }
 .ripple{
   position: relative;
@@ -608,12 +623,6 @@ video {
 }
 .grid-rows-\[min-content_auto\] {
   grid-template-rows: min-content auto;
-}
-.grid-rows-\[min-content_minmax\(0\2c 150px\)_min-content_min-content\] {
-  grid-template-rows: min-content minmax(0,150px) min-content min-content;
-}
-.grid-rows-\[min-content_minmax\(0\2c 80px\)_min-content_min-content\] {
-  grid-template-rows: min-content minmax(0,80px) min-content min-content;
 }
 .flex-col {
   flex-direction: column;
@@ -868,7 +877,7 @@ video {
 }
 
 
-amp-selector[on^="select"] [option]:focus {
+amp-selector[on^="select"] [option]:focus-visible {
   cursor: pointer;
   outline: 4px solid rgba(117, 170, 255, 0.5);
 }
@@ -926,7 +935,7 @@ amp-selector [option][selected] {
 outline: none;
 }
 
-button:focus, a:focus {
+button:focus-visible, a:focus-visible {
   outline: 4px solid rgba(117, 170, 255, 0.5);
 }
 
@@ -982,6 +991,10 @@ button:focus, a:focus {
     max-height: 300px;
   }
 
+  .tablet\:min-h-\[170px\] {
+    min-height: 170px;
+  }
+
   .tablet\:w-\[3\.75rem\] {
     width: 3.75rem;
   }
@@ -994,12 +1007,8 @@ button:focus, a:focus {
     max-width: 300px;
   }
 
-  .tablet\:max-w-\[50ch\] {
-    max-width: 50ch;
-  }
-
-  .tablet\:max-w-\[75ch\] {
-    max-width: 75ch;
+  .tablet\:max-w-\[50\%\] {
+    max-width: 50%;
   }
 
   .tablet\:grid-rows-\[min-content_minmax\(0\2c 150px\)_min-content_min-content\] {
@@ -1036,6 +1045,10 @@ button:focus, a:focus {
 
   .tablet\:justify-self-start {
     justify-self: start;
+  }
+
+  .tablet\:justify-self-center {
+    justify-self: center;
   }
 
   .tablet\:p-0 {
@@ -1141,9 +1154,6 @@ button:focus, a:focus {
   .desktop\:max-h-\[712px\] {
     max-height: 712px;
   }
-  .desktop\:max-h-\[445px\] {
-    max-height: 445px;
-  }
   .desktop\:max-h-\[none\] {
     max-height: none;
   }
@@ -1158,9 +1168,6 @@ button:focus, a:focus {
   }
   .desktop\:max-w-\[568px\] {
     max-width: 568px;
-  }
-  .desktop\:max-w-\[445px\] {
-    max-width: 445px;
   }
   .desktop\:max-w-none {
     max-width: none;
