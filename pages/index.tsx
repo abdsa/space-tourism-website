@@ -6,12 +6,21 @@ import Header from "../components/header";
 import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
+import { GetStaticProps} from 'next'
 
 import {Barlow_Condensed} from "@next/font/google"
 
 const barlowCondensed = Barlow_Condensed({weight: "100"})
 
 
+
+export const getStaticProps: GetStaticProps = async (context) => {
+
+  
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
 export const config = {
   amp: true,
 };

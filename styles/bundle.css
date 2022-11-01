@@ -525,23 +525,11 @@ video {
 .mr-5 {
   margin-right: 1.25rem;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
-}
-.mt-6 {
-  margin-top: 1.5rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .flex {
   display: flex;
@@ -642,11 +630,17 @@ video {
 .gap-10 {
   gap: 2.5rem;
 }
+.gap-7 {
+  gap: 1.75rem;
+}
 .gap-5 {
   gap: 1.25rem;
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-4 {
   gap: 1rem;
@@ -656,15 +650,6 @@ video {
 }
 .gap-3 {
   gap: 0.75rem;
-}
-.gap-6 {
-  gap: 1.5rem;
-}
-.gap-7 {
-  gap: 1.75rem;
-}
-.gap-1 {
-  gap: 0.25rem;
 }
 .place-self-end {
   place-self: end;
@@ -704,45 +689,36 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.px-\[max\(3\.7vw\2c 24px\)\] {
-  padding-left: max(3.7vw,24px);
-  padding-right: max(3.7vw,24px);
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .px-\[6rem\] {
   padding-left: 6rem;
   padding-right: 6rem;
 }
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
 .pb-12 {
   padding-bottom: 3rem;
 }
-.pb-\[5vh\] {
-  padding-bottom: 5vh;
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .pl-\[2rem\] {
   padding-left: 2rem;
@@ -753,9 +729,6 @@ video {
 .pt-\[2rem\] {
   padding-top: 2rem;
 }
-.pb-0 {
-  padding-bottom: 0px;
-}
 .pr-20 {
   padding-right: 5rem;
 }
@@ -764,12 +737,6 @@ video {
 }
 .pr-0 {
   padding-right: 0px;
-}
-.pl-\[max\(3\.7vw\2c 24px\)\] {
-  padding-left: max(3.7vw,24px);
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 .text-center {
   text-align: center;
@@ -1042,8 +1009,8 @@ button:focus, a:focus {
     gap: 2.5rem;
   }
 
-  .tablet\:gap-5 {
-    gap: 1.25rem;
+  .tablet\:gap-7 {
+    gap: 1.75rem;
   }
 
   .tablet\:gap-20 {
@@ -1052,10 +1019,6 @@ button:focus, a:focus {
 
   .tablet\:gap-1 {
     gap: 0.25rem;
-  }
-
-  .tablet\:gap-7 {
-    gap: 1.75rem;
   }
 
   .tablet\:gap-0 {
@@ -1082,10 +1045,6 @@ button:focus, a:focus {
 
   .tablet\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .tablet\:pr-0 {
-    padding-right: 0px;
   }
 
   .tablet\:pl-\[max\(3\.7vw\2c 24px\)\] {
@@ -1148,9 +1107,6 @@ button:focus, a:focus {
   }
   .desktop\:-mt-\[5vh\] {
     margin-top: -5vh;
-  }
-  .desktop\:mt-10 {
-    margin-top: 2.5rem;
   }
   .desktop\:block {
     display: block;
@@ -1248,15 +1204,8 @@ button:focus, a:focus {
   .desktop\:p-0 {
     padding: 0px;
   }
-  .desktop\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .desktop\:pb-0 {
     padding-bottom: 0px;
-  }
-  .desktop\:pl-\[max\(3\.7vw\2c 24px\)\] {
-    padding-left: max(3.7vw,24px);
   }
   .desktop\:pt-10 {
     padding-top: 2.5rem;

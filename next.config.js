@@ -18,6 +18,7 @@ const nextConfig = {
     defaultLocale: 'en',
 
   },
+  images: {minimumCacheTTL: 9999999}
 }
 
 module.exports = nextConfig
