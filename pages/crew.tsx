@@ -72,13 +72,13 @@ const Home: NextPage = () => {
                       {item.bio}
                     </p>
                   </div>
-                  <amp-img
+                  <Image
                     src={item.images.webp}
                     width="580"
                     height="712"
                     layout="responsive"
                     className="height-[222px] tablet:height-[356px] desktop:height-[712px] mt-2 w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
-                    noloading=""
+                    alt={item.name}
                   />
                   <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
                 </article>

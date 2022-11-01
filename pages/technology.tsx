@@ -66,14 +66,14 @@ const Technology: NextPage = () => {
                     selected={index === 0 ? "true" : ""}
                     className="grid gap-5 desktop:grid-flow-col desktop:grid-cols-[60%_40%] desktop:items-center desktop:gap-0"
                   >
-                    <amp-img
+                    <Image
                       layout="responsive"
                       width="375"
                       height="170"
                       src={item.images.landscape}
                       className="desktop:order-2 desktop:h-[500px] desktop:w-full"
-                      noloading=""
-                    ></amp-img>
+                      alt={item.name}
+                    ></Image>
                     <div className="grid place-content-center gap-2 text-center desktop:order-1 desktop:place-content-start desktop:text-start">
                       <div className="font-barlowC text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-navText">
                         The terminology...

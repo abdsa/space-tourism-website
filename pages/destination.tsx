@@ -59,13 +59,12 @@ const Destination: NextPage = () => {
                 selected={index === 0 ? "true" : ""}
               >
                 <div className="relative grid justify-items-center">
-                  <amp-img
+                  <Image
                     className="height-[300px] max-h-[300px] w-[300px] max-w-[300px] tablet:h-full tablet:max-h-[400px] tablet:w-full tablet:max-w-[400px] desktop:h-full desktop:max-h-[500px] desktop:w-full desktop:max-w-[500px]"
                     src={`${item.images.webp}`}
-                    layout="responsive"
                     height="500"
                     width="500"
-                    noloading=""
+                    alt={item.name}
                   />
                 </div>
                 <div className="grid px-3 tablet:grid-rows-[30%_min-content_min-content_min-content] tablet:px-0 desktop:grid-rows-[40%_min-content_min-content_min-content]">
