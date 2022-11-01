@@ -39,7 +39,6 @@ const Home: NextPage = () => {
         id="main"
         className="grid pb-5 gap-6 tablet:gap-0 text-white desktop:grid-cols-[60%_40%] desktop:pb-0"
       >
-        <div className={barlowCondensed.className}>fsdafsfasdfasdfsda</div>
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO
@@ -64,7 +63,7 @@ const Home: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: 10vh 90vh;
+            grid-template-rows: min-content auto;
           }
 
           @media (min-width: 768px) {
