@@ -59,7 +59,7 @@ const Destination: NextPage = () => {
                 id={`${item.name} description`}
                 role="tabpanel"
                 aria-labelledby={`${item.name} tab`}
-                className="gap-10 desktop:grid-flow-col desktop:grid-cols-[30vw_minmax(0,40rem)] desktop:gap-10"
+                className="gap-2 desktop:grid-flow-col desktop:grid-cols-[30vw_minmax(0,40rem)] desktop:gap-10"
                 key={`${index}`}
                 // @ts-ignore
                 option="true"
@@ -67,11 +67,11 @@ const Destination: NextPage = () => {
               >
                 <div className="relative grid justify-items-center">
                   <Image
-                    className="max-h-[300px] max-w-[300px] tablet:max-h-[400px] tablet:max-w-[400px] desktop:max-h-[500px] desktop:max-w-[500px]"
+                    className="max-h-[170px] max-w-[170px] tablet:max-h-[300px] tablet:max-w-[300px] desktop:max-h-[none] desktop:max-w-none"
                     src={planetImgs[index]}
                     alt={item.name}
                     quality="100"
-                    priority={true}
+                    priority={true} 
                   />
                 </div>
                 <div className="grid px-3 tablet:grid-rows-[min-content_minmax(0,150px)_min-content_min-content] tablet:px-0 desktop:grid-rows-[min-content_minmax(0,150px)_min-content_min-content]">
@@ -84,7 +84,7 @@ const Destination: NextPage = () => {
                   <hr className="my-10 border border-[#383B4B] tablet:my-6 desktop:my-10" />
                   <div className="flex flex-col gap-10 tablet:flex-row tablet:justify-center tablet:gap-20 desktop:flex-row desktop:justify-start desktop:gap-20">
                     <div className="flex flex-col font-barlowC tablet:gap-1 desktop:gap-1">
-                      <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary  tablet:text-start desktop:text-start">
+                      <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary tablet:text-start desktop:text-start">
                         AVG. DISTANCE
                       </span>
                       <span className="text-center font-bellefair text-smHeading uppercase tablet:text-start desktop:text-start">
@@ -93,8 +93,8 @@ const Destination: NextPage = () => {
                     </div>
 
                     <div className="flex flex-col gap-2 font-barlowC tablet:gap-1 desktop:gap-1">
-                      <span className="text-center text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-start desktop:text-start">
-                        Est. travel time
+                      <span className="text-center text-smSubHeading tracking-smSubHeading text-secondary tablet:text-start desktop:text-start">
+                        EST. TRAVEL TIME
                       </span>
                       <span className="text-center font-bellefair text-smHeading uppercase tablet:text-start desktop:text-start">
                         {item.travel}
