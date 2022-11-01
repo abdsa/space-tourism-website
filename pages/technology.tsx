@@ -67,7 +67,6 @@ const Technology: NextPage = () => {
                     className="grid gap-5 desktop:grid-flow-col desktop:grid-cols-[60%_40%] desktop:items-center desktop:gap-0"
                   >
                     <Image
-                      layout="responsive"
                       width="375"
                       height="170"
                       src={item.images.landscape}
