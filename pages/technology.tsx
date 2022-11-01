@@ -26,13 +26,16 @@ const Technology: NextPage = () => {
           href="https://spacetourisms.vercel.app/technology"
           key="canonical"
         />
-        <meta name="description" content="Our technologies are from one of the best companies." />
+        <meta
+          name="description"
+          content="Our technologies are from one of the best companies."
+        />
       </Head>
       <SkipToContent></SkipToContent>
       <Header></Header>
       <main
         id="main"
-        className="grid grid-rows-[repeat(2,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 tablet:pb-0 desktop:my-auto desktop:justify-items-start desktop:gap-10 desktop:pb-0"
+        className="grid grid-rows-[repeat(2,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 desktop:my-auto desktop:justify-items-start desktop:gap-10 desktop:pb-0"
       >
         <>
           <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:ml-20 tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
@@ -96,12 +99,14 @@ const Technology: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: 10vh 90vh;
+            grid-template-rows: min-content auto;
+            gap: 1.5rem;
           }
 
           @media (min-width: 768px) {
             body {
               background-image: url(/background-technology-tablet.jpg);
+              gap: 3rem;
             }
           }
 
@@ -109,6 +114,7 @@ const Technology: NextPage = () => {
             body {
               background-image: url(/background-technology-desktop.jpg);
               padding: 0;
+              gap: 3rem;
             }
           }
         `}

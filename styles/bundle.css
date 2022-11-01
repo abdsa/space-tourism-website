@@ -528,6 +528,21 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .flex {
   display: flex;
 }
@@ -645,6 +660,12 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-7 {
+  gap: 1.75rem;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
 .place-self-end {
   place-self: end;
 }
@@ -699,6 +720,18 @@ video {
   padding-left: 6rem;
   padding-right: 6rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -731,6 +764,12 @@ video {
 }
 .pr-0 {
   padding-right: 0px;
+}
+.pl-\[max\(3\.7vw\2c 24px\)\] {
+  padding-left: max(3.7vw,24px);
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .text-center {
   text-align: center;
@@ -1015,8 +1054,30 @@ button:focus, a:focus {
     gap: 0.25rem;
   }
 
+  .tablet\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .tablet\:gap-0 {
+    gap: 0px;
+  }
+
   .tablet\:justify-self-start {
     justify-self: start;
+  }
+
+  .tablet\:p-0 {
+    padding: 0px;
+  }
+
+  .tablet\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .tablet\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .tablet\:pb-0 {
@@ -1025,6 +1086,10 @@ button:focus, a:focus {
 
   .tablet\:pr-0 {
     padding-right: 0px;
+  }
+
+  .tablet\:pl-\[max\(3\.7vw\2c 24px\)\] {
+    padding-left: max(3.7vw,24px);
   }
 
   .tablet\:text-start {
@@ -1083,6 +1148,9 @@ button:focus, a:focus {
   }
   .desktop\:-mt-\[5vh\] {
     margin-top: -5vh;
+  }
+  .desktop\:mt-10 {
+    margin-top: 2.5rem;
   }
   .desktop\:block {
     display: block;
@@ -1180,8 +1248,18 @@ button:focus, a:focus {
   .desktop\:p-0 {
     padding: 0px;
   }
+  .desktop\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .desktop\:pb-0 {
     padding-bottom: 0px;
+  }
+  .desktop\:pl-\[max\(3\.7vw\2c 24px\)\] {
+    padding-left: max(3.7vw,24px);
+  }
+  .desktop\:pt-10 {
+    padding-top: 2.5rem;
   }
   .desktop\:text-start {
     text-align: start;

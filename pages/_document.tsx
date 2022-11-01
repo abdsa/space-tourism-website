@@ -7,6 +7,7 @@ import Document, {
   DocumentContext,
 } from "next/document";
 
+
 // @ts-ignore
 import tailwindcss from "!raw-loader!../styles/bundle.css";
 export default class MyDocument extends Document {

@@ -17,7 +17,8 @@ const nextConfig = {
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'en',
 
-  }
+  },
+  experimental: {appDir: true}
 }
 
 module.exports = nextConfig

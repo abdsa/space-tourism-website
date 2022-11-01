@@ -31,7 +31,7 @@ const Destination: NextPage = () => {
       <Header></Header>
       <main
         id="main"
-        className="grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-5 px-5 pb-12 text-white tablet:gap-5 tablet:pb-0 desktop:place-content-center desktop:gap-0"
+        className="grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-7 pb-12 text-white tablet:gap-7 tablet:px-5 tablet:pb-0 desktop:place-content-center desktop:gap-0"
       >
         <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
@@ -68,7 +68,7 @@ const Destination: NextPage = () => {
                     noloading=""
                   />
                 </div>
-                <div className="grid tablet:grid-rows-[30%_min-content_min-content_min-content] desktop:grid-rows-[40%_min-content_min-content_min-content]">
+                <div className="grid px-3 tablet:grid-rows-[30%_min-content_min-content_min-content] tablet:px-0 desktop:grid-rows-[40%_min-content_min-content_min-content]">
                   <p className="text-center font-bellefair text-lgHeading uppercase tablet:mb-20 tablet:text-[5rem] desktop:mb-0 desktop:text-start desktop:text-2xlHeading">
                     {item.name}
                   </p>
@@ -109,12 +109,15 @@ const Destination: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: 10vh 90vh;
+            grid-template-rows: min-content auto
+            gap: 1.5rem
+            
           }
 
           @media (min-width: 768px) {
             body {
               background-image: url(/background-destination-tablet.jpg);
+              gap: 3rem
             }
           }
 
@@ -122,7 +125,7 @@ const Destination: NextPage = () => {
             body {
               background-image: url(/background-destination-desktop.jpg);
               padding: 0;
-              gap: 0;
+              gap: 3rem
             }
           }
 

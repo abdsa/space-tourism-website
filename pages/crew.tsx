@@ -28,13 +28,13 @@ const Home: NextPage = () => {
       </Head>
       <SkipToContent></SkipToContent>
       <meta
-          name="description"
-          content="Meet the crew that will trek with you."
-        />
+        name="description"
+        content="Meet the crew that will trek with you."
+      />
       <Header></Header>
       <main
         id="main"
-        className="relative grid grid-rows-[repeat(3,min-content)] gap-10 px-5 pb-12 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0"
+        className="relative grid grid-rows-[repeat(3,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0"
       >
         <>
           <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                   aria-labelledby={`${item.name} tab`}
                   className="grid text-center desktop:grid-flow-col desktop:text-start"
                 >
-                  <div className="grid grid-rows-[repeat(3,min-content)] self-center">
+                  <div className="grid grid-rows-[repeat(3,min-content)] self-center px-3 tablet:px-0">
                     <div className="uppercase opacity-50 tablet:text-[1.5rem] desktop:text-mdHeading">
                       {item.role}
                     </div>
@@ -77,8 +77,9 @@ const Home: NextPage = () => {
                     width="580"
                     height="712"
                     layout="responsive"
-                    className="height-[222px] tablet:height-[356px] desktop:height-[712px] w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
-                    noloading=""/>
+                    className="height-[222px] tablet:height-[356px] desktop:height-[712px] mt-2 w-[177px] justify-self-center tablet:w-[500px] desktop:w-[580px]"
+                    noloading=""
+                  />
                   <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
                 </article>
               );
@@ -94,12 +95,14 @@ const Home: NextPage = () => {
             background-size: cover;
             min-height: 100vh;
             display: grid;
-            grid-template-rows: 10vh 1fr;
+            grid-template-rows: min-content auto;
+            gap: 1.5rem;
           }
 
           @media (min-width: 768px) {
             body {
               background-image: url(/background-crew-tablet.jpg);
+              gap: 3rem;
             }
           }
 
@@ -107,6 +110,7 @@ const Home: NextPage = () => {
             body {
               background-image: url(/background-crew-desktop.jpg);
               padding: 0;
+              gap: 3rem;
             }
           }
         `}

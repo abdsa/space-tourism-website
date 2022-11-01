@@ -7,6 +7,11 @@ import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
 
+import {Barlow_Condensed} from "@next/font/google"
+
+const barlowCondensed = Barlow_Condensed({weight: "100"})
+
+
 export const config = {
   amp: true,
 };
@@ -32,7 +37,7 @@ const Home: NextPage = () => {
 
       <main
         id="main"
-        className="grid pb-[5vh] text-white desktop:grid-cols-[60%_40%] desktop:pb-0"
+        className="grid pb-5 gap-6 tablet:gap-0 text-white desktop:grid-cols-[60%_40%] desktop:pb-0"
       >
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
