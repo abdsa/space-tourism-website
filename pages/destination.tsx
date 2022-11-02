@@ -49,7 +49,6 @@ const Destination: NextPage = () => {
         <DestinationTabs></DestinationTabs>
         <amp-selector
           className="tabpanels grid grid-flow-col gap-5 font-barlowC text-navText tracking-navText text-white desktop:text-bodyText"
-          role="tablist"
           keyboard-select-mode="focus"
           id="destination-tab-panels"
         >
