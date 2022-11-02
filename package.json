@@ -10,7 +10,8 @@
     "start": "next start",
     "dev:css": "postcss styles/globals.css --config postcss.config.js -o styles/bundle.css -w",
     "build:css": "postcss styles/globals.css --config postcss.config.js -o styles/bundle.css",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,tsx,ts}\""
   },
   "dependencies": {
     "@next/font": "^13.0.0",

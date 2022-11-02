@@ -89,7 +89,7 @@ const Technology: NextPage = () => {
                       src={item.images.portrait}
                       className="hidden desktop:order-2 desktop:block desktop:h-[527px] desktop:w-[515px]"
                       alt={item.name}
-                      quality="100"
+                      quality={100}
                       priority
                     ></Image>
                     <Image
@@ -98,6 +98,8 @@ const Technology: NextPage = () => {
                       src={item.images.landscape}
                       className="w-full tablet:min-h-[170px] tablet:max-w-[50%] tablet:justify-self-center desktop:order-2 desktop:hidden desktop:h-[500px] desktop:w-full"
                       alt={item.name}
+                      quality={100}
+                      priority
                     ></Image>
                     <div className="grid place-content-center gap-2 text-center desktop:order-1 desktop:place-content-start desktop:text-start">
                       <div className="font-barlowC text-smSubHeading uppercase tracking-smSubHeading text-secondary tablet:text-navText">

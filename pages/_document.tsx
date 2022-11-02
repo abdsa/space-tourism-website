@@ -7,7 +7,6 @@ import Document, {
   DocumentContext,
 } from "next/document";
 
-
 // @ts-ignore
 import tailwindcss from "!raw-loader!../styles/bundle.css";
 export default class MyDocument extends Document {
@@ -61,7 +60,7 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="KHyW2OAlQvDnCveNL1x2KvHDHdbvRo3tD00OqYN3i6w"
           />
-          <link rel="icon" type="image/x-icon" href="/favicon-32x32.png"/>
+          <link rel="icon" type="image/x-icon" href="/favicon-32x32.png" />
         </Head>
         <body>
           <Main />

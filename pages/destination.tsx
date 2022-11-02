@@ -72,6 +72,8 @@ const Destination: NextPage = () => {
                     className="max-h-[170px] max-w-[170px] tablet:max-h-[300px] tablet:max-w-[300px] desktop:max-h-[none] desktop:max-w-none"
                     src={item.images.webp}
                     alt={item.name}
+                    quality={100}
+                    priority
                   />
                 </div>
                 <div className="grid px-3 tablet:grid-rows-[min-content_minmax(0,150px)_min-content_min-content] tablet:px-0 desktop:grid-rows-[min-content_minmax(0,150px)_min-content_min-content]">

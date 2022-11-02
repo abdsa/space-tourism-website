@@ -5,8 +5,6 @@ import Header from "../components/header";
 import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 
-
-
 export const config = {
   amp: true,
 };
@@ -27,10 +25,7 @@ const Home: NextPage = () => {
       <SkipToContent></SkipToContent>
       <Header></Header>
 
-      <main
-        id="main"
-        className="grid pb-5 text-white desktop:grid-cols-2"
-      >
+      <main id="main" className="grid pb-5 text-white desktop:grid-cols-2">
         <div className="flex flex-col self-center justify-self-center">
           <h1 className="text-center font-barlow text-navText tracking-smHeading text-secondary desktop:text-start desktop:text-smHeading">
             SO, YOU WANT TO TRAVEL TO

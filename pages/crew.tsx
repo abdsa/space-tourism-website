@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         id="main"
         className="relative grid grid-rows-[repeat(3,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0"
       >
-        <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:ml-20 tablet:justify-self-start desktop:ml-0 tablet:text-smHeading desktop:text-smHeading">
+        <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:ml-20 tablet:justify-self-start tablet:text-smHeading desktop:ml-0 desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             02
           </span>
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                   height="712"
                   className="mt-10 max-h-[222px] max-w-[177px] justify-self-center  tablet:max-h-[472px] tablet:max-w-[356px]  desktop:ml-20 desktop:mt-0 desktop:max-h-[712px] desktop:max-w-[568px]"
                   alt={item.name}
-                  quality="100"
+                  quality={100}
                   priority
                 />
                 <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
