@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Image from 'next/image';
 import Header from "../components/header";
 import jsonData from "../data.json";
 import DestinationTabs from "../components/destination-tabs";
@@ -10,12 +10,12 @@ export const config = {
   amp: true,
 };
 
-// import Moon from "../public/assets/destination/image-moon.webp";
-// import Titan from "../public/assets/destination/image-titan.webp";
-// import Europa from "../public/assets/destination/image-europa.webp";
-// import Mars from "../public/assets/destination/image-mars.webp";
+import Moon from "../public/image-moon.webp";
+import Titan from "../public/image-titan.webp";
+import Europa from "../public/image-europa.webp";
+import Mars from "../public/image-mars.webp";
 
-// const planetImgs = [Moon, Mars, Europa, Titan];
+const planetImgs = [Moon, Mars, Europa, Titan];
 
 const Destination: NextPage = () => {
   return (
@@ -67,10 +67,8 @@ const Destination: NextPage = () => {
               >
                 <div className="relative grid justify-items-center">
                   <Image
-                    width="445"
-                    height="445"
                     className="max-h-[170px] max-w-[170px] tablet:max-h-[300px] tablet:max-w-[300px] desktop:max-h-[none] desktop:max-w-none"
-                    src={item.images.webp}
+                    src={planetImgs[index]}
                     alt={item.name}
                   />
                 </div>
