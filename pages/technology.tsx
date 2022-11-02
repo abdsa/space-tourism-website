@@ -66,7 +66,6 @@ const Technology: NextPage = () => {
             <TechnologyTabs></TechnologyTabs>
 
             <amp-selector
-              role="tablist"
               keyboard-select-mode="focus"
               id="technology-tab-panels"
               className="tabpanels"

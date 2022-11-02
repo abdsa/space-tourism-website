@@ -46,7 +46,6 @@ const Home: NextPage = () => {
           Meet your crew
         </h1>
         <amp-selector
-          role="tablist"
           keyboard-select-mode="focus"
           id="crew-tab-panels"
           className="tabpanels"
