@@ -40,6 +40,7 @@ const Destination: NextPage = () => {
         id="main"
         className="grid grid-flow-col grid-rows-[repeat(3,min-content)] justify-items-center gap-7 pb-12 text-white tablet:gap-7 tablet:px-5 tablet:pb-0 desktop:place-content-center desktop:gap-0"
       >
+        <Image src={Moon} alt="The moon" />
         <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
           <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
             01
@@ -71,7 +72,7 @@ const Destination: NextPage = () => {
                     src={planetImgs[index]}
                     alt={item.name}
                     quality="100"
-                    priority={true} 
+                    priority={true}
                   />
                 </div>
                 <div className="grid px-3 tablet:grid-rows-[min-content_minmax(0,150px)_min-content_min-content] tablet:px-0 desktop:grid-rows-[min-content_minmax(0,150px)_min-content_min-content]">

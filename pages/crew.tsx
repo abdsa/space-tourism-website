@@ -7,7 +7,10 @@ import Header from "../components/header";
 import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
 import jsonData from "../data.json";
-
+import Mark from "../public/image-mark-shuttleworth.webp";
+import Douglas from "../public/image-douglas-hurley.png";
+import Anousheh from "../public/image-anousheh-ansari.png";
+import Victor from "../public/image-victor-glover.webp";
 export const config = {
   amp: true,
 };
@@ -36,58 +39,57 @@ const Home: NextPage = () => {
         id="main"
         className="relative grid grid-rows-[repeat(3,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-10 desktop:place-content-center desktop:justify-items-start desktop:gap-0"
       >
-        <>
-          <h1 className="justify-self-center tablet:ml-20 font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
-            <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
-              02
-            </span>
-            Meet your crew
-          </h1>
-          <amp-selector
-            role="tablist"
-            keyboard-select-mode="focus"
-            id="crew-tab-panels"
-            className="tabpanels"
-          >
-            {crew.map((item, index) => {
-              return (
-                <article
-                  key={item.name}
-                  // @ts-ignore
-                  option="true"
-                  selected={index === 0 ? "true" : ""}
-                  id={`${item.name} description`}
-                  role="tabpanel"
-                  aria-labelledby={`${item.name} tab`}
-                  className="grid text-center desktop:grid-flow-col desktop:text-start"
-                >
-                  <div className="grid grid-rows-[repeat(3,min-content)] self-center px-3 tablet:px-0">
-                    <div className="uppercase opacity-50 tablet:text-[1.5rem] desktop:text-mdHeading">
-                      {item.role}
-                    </div>
-                    <div className="text-[1.5rem] uppercase text-white tablet:text-[2.5rem] desktop:text-lgHeading">
-                      {item.name}
-                    </div>
-                    <p className="max-w-[75ch] justify-self-center font-barlow font-thin leading-8 text-secondary tablet:text-navText desktop:text-bodyText">
-                      {item.bio}
-                    </p>
+        <Image src={Victor} alt="A crew member - Victor Glover"/>
+        <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:ml-20 tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">
+          <span className="mr-5 font-bold text-[rgb(255,255,255,0.25)]">
+            02
+          </span>
+          Meet your crew
+        </h1>
+        <amp-selector
+          role="tablist"
+          keyboard-select-mode="focus"
+          id="crew-tab-panels"
+          className="tabpanels"
+        >
+          {crew.map((item, index) => {
+            return (
+              <article
+                key={item.name}
+                // @ts-ignore
+                option="true"
+                selected={index === 0 ? "true" : ""}
+                id={`${item.name} description`}
+                role="tabpanel"
+                aria-labelledby={`${item.name} tab`}
+                className="grid text-center desktop:grid-flow-col desktop:text-start"
+              >
+                <div className="grid grid-rows-[repeat(3,min-content)] self-center px-3 tablet:px-0">
+                  <div className="uppercase opacity-50 tablet:text-[1.5rem] desktop:text-mdHeading">
+                    {item.role}
                   </div>
-                  <Image
-                    src={item.images.webp}
-                    width="580"
-                    height="712"
-                    className="mt-10 desktop:ml-20 max-w-[177px] max-h-[222px]  tablet:max-h-[472px] tablet:max-w-[356px]  justify-self-center desktop:mt-0 desktop:max-w-[568px] desktop:max-h-[712px]"
-                    alt={item.name}
-                    quality="100"
-                    priority
-                  />
-                  <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
-                </article>
-              );
-            })}
-          </amp-selector>
-          <CrewTabs></CrewTabs>
-        </>
+                  <div className="text-[1.5rem] uppercase text-white tablet:text-[2.5rem] desktop:text-lgHeading">
+                    {item.name}
+                  </div>
+                  <p className="max-w-[75ch] justify-self-center font-barlow font-thin leading-8 text-secondary tablet:text-navText desktop:text-bodyText">
+                    {item.bio}
+                  </p>
+                </div>
+                <Image
+                  src={item.images.webp}
+                  width="580"
+                  height="712"
+                  className="mt-10 max-h-[222px] max-w-[177px] justify-self-center  tablet:max-h-[472px] tablet:max-w-[356px]  desktop:ml-20 desktop:mt-0 desktop:max-h-[712px] desktop:max-w-[568px]"
+                  alt={item.name}
+                  quality="100"
+                  priority
+                />
+                <hr className="mb-10 border border-[#383B4B] desktop:hidden" />
+              </article>
+            );
+          })}
+        </amp-selector>
+        <CrewTabs></CrewTabs>
       </main>
       <style jsx global>
         {`

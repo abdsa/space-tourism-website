@@ -32,8 +32,6 @@ export const config = {
 
 const technology = jsonData.technology;
 
-const technologyImages = [];
-
 const Technology: NextPage = () => {
   return (
     <>
