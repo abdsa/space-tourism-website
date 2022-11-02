@@ -10,12 +10,12 @@ export const config = {
   amp: true,
 };
 
-import Moon from "../public/assets/destination/image-moon.webp";
-import Titan from "../public/assets/destination/image-titan.webp";
-import Europa from "../public/assets/destination/image-europa.webp";
-import Mars from "../public/assets/destination/image-mars.webp";
+// import Moon from "../public/assets/destination/image-moon.webp";
+// import Titan from "../public/assets/destination/image-titan.webp";
+// import Europa from "../public/assets/destination/image-europa.webp";
+// import Mars from "../public/assets/destination/image-mars.webp";
 
-const planetImgs = [Moon, Mars, Europa, Titan];
+// const planetImgs = [Moon, Mars, Europa, Titan];
 
 const Destination: NextPage = () => {
   return (
@@ -67,8 +67,10 @@ const Destination: NextPage = () => {
               >
                 <div className="relative grid justify-items-center">
                   <Image
+                    width="445"
+                    height="445"
                     className="max-h-[170px] max-w-[170px] tablet:max-h-[300px] tablet:max-w-[300px] desktop:max-h-[none] desktop:max-w-none"
-                    src={planetImgs[index]}
+                    src={item.images.webp}
                     alt={item.name}
                   />
                 </div>
