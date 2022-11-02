@@ -1,16 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Explore from "../components/explore-button";
 import Header from "../components/header";
 import MobileMenu from "../components/mobile-menu";
 import SkipToContent from "../components/skip-to-content";
-import jsonData from "../data.json";
-import { GetStaticProps } from "next";
 
-import { Barlow_Condensed } from "@next/font/google";
-
-const barlowCondensed = Barlow_Condensed({ weight: "100" });
 
 
 export const config = {
