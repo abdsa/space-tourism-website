@@ -10,10 +10,10 @@ export const config = {
   amp: true,
 };
 
-import Moon from "../public/image-moon.webp";
-import Titan from "../public/image-titan.webp";
-import Europa from "../public/image-europa.webp";
-import Mars from "../public/image-mars.webp";
+import Moon from "../public/assets/destination/image-moon.webp";
+import Titan from "../public/assets/destination/image-titan.webp";
+import Europa from "../public/assets/destination/image-europa.webp";
+import Mars from "../public/assets/destination/image-mars.webp";
 
 const planetImgs = [Moon, Mars, Europa, Titan];
 
