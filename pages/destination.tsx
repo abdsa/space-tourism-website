@@ -69,6 +69,8 @@ const Destination: NextPage = () => {
                   <Image
                     className="max-h-[170px] max-w-[170px] tablet:max-h-[300px] tablet:max-w-[300px] desktop:max-h-[none] desktop:max-w-none"
                     src={item.images.webp}
+                    width="445"
+                    height="445"
                     alt={item.name}
                     quality="100"
                     priority={true}
