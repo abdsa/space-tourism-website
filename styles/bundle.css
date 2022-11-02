@@ -657,9 +657,6 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
-.gap-6 {
-  gap: 1.5rem;
-}
 .gap-4 {
   gap: 1rem;
 }
@@ -668,6 +665,12 @@ video {
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .place-self-end {
   place-self: end;
@@ -681,8 +684,14 @@ video {
 .justify-self-center {
   justify-self: center;
 }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .rounded-full {
   border-radius: 9999px;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .border {
   border-width: 1px;
@@ -1039,10 +1048,6 @@ button:focus-visible, a:focus-visible {
     gap: 0.25rem;
   }
 
-  .tablet\:gap-0 {
-    gap: 0px;
-  }
-
   .tablet\:justify-self-start {
     justify-self: start;
   }
@@ -1181,11 +1186,14 @@ button:focus-visible, a:focus-visible {
   .desktop\:grid-cols-\[30vw_minmax\(0\2c 40rem\)\] {
     grid-template-columns: 30vw minmax(0,40rem);
   }
-  .desktop\:grid-cols-\[60\%_40\%\] {
-    grid-template-columns: 60% 40%;
+  .desktop\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .desktop\:grid-cols-\[10\%_90\%\] {
     grid-template-columns: 10% 90%;
+  }
+  .desktop\:grid-cols-\[60\%_40\%\] {
+    grid-template-columns: 60% 40%;
   }
   .desktop\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));

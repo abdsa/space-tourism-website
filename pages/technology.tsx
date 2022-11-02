@@ -54,7 +54,7 @@ const Technology: NextPage = () => {
       <Header></Header>
       <main
         id="main"
-        className="grid grid-rows-[repeat(2,min-content)] gap-10 pb-12 font-bellefair text-white tablet:gap-20 desktop:my-auto desktop:justify-items-start desktop:gap-10 desktop:pb-0"
+        className="grid grid-rows-[repeat(2,min-content)] gap-10 font-bellefair text-white tablet:gap-20 desktop:my-auto desktop:justify-items-start desktop:gap-10 desktop:pb-0"
       >
         <>
           <h1 className="justify-self-center font-barlowC text-navText font-thin uppercase tracking-smHeading tablet:ml-20 tablet:justify-self-start tablet:text-smHeading desktop:text-smHeading">

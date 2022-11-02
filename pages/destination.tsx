@@ -59,7 +59,7 @@ const Destination: NextPage = () => {
                 id={`${item.name} description`}
                 role="tabpanel"
                 aria-labelledby={`${item.name} tab`}
-                className="gap-2 desktop:grid-flow-col desktop:grid-cols-[30vw_minmax(0,40rem)] desktop:gap-10"
+                className="gap-8 desktop:grid-flow-col desktop:grid-cols-[30vw_minmax(0,40rem)] desktop:gap-10"
                 key={`${index}`}
                 // @ts-ignore
                 option="true"
