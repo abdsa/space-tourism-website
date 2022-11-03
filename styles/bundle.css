@@ -844,6 +844,9 @@ video {
 .outline-yellow-50 {
   outline-color: #fefce8;
 }
+.outline-slate-700 {
+  outline-color: #334155;
+}
 .transition-\[border-bottom\] {
   transition-property: border-bottom;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
