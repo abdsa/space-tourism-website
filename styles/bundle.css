@@ -1159,6 +1159,9 @@ button:focus-visible, a:focus-visible {
   .desktop\:max-h-\[none\] {
     max-height: none;
   }
+  .desktop\:max-h-\[700px\] {
+    max-height: 700px;
+  }
   .desktop\:w-\[515px\] {
     width: 515px;
   }
@@ -1173,6 +1176,9 @@ button:focus-visible, a:focus-visible {
   }
   .desktop\:max-w-none {
     max-width: none;
+  }
+  .desktop\:max-w-\[514px\] {
+    max-width: 514px;
   }
   .desktop\:grid-flow-row {
     grid-auto-flow: row;

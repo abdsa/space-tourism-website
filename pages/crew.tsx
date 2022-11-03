@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                   src={item.images.webp}
                   width="580"
                   height="712"
-                  className="mt-10 max-h-[222px] max-w-[177px] justify-self-center  tablet:max-h-[472px] tablet:max-w-[356px]  desktop:ml-20 desktop:mt-0 desktop:max-h-[712px] desktop:max-w-[568px]"
+                  className="mt-10 max-h-[222px] max-w-[177px] justify-self-center  tablet:max-h-[472px] tablet:max-w-[356px]  desktop:ml-20 desktop:mt-0 desktop:max-w-none"
                   alt={item.name}
                   quality="100"
                   priority
